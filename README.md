@@ -24,12 +24,12 @@ The project code requires the following software:
 
 ### Installing
 
-1- Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads) and [Vagrant](https://www.vagrantup.com/)
-2- Clone the [Udacity Vagrantfile](https://github.com/udacity/fullstack-nanodegree-vm)
-3- Clone this repo into the catlog/ directory found in the vagrant directory
-4- Launch the Vagrant VM with `vagrant up`
-5- Log into Vagrant VM with `vagrant ssh`
-6- From the main directory run `sudo pip install -r requirements.txt`
+1. Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads) and [Vagrant](https://www.vagrantup.com/)
+2. Clone the [Udacity Vagrantfile](https://github.com/udacity/fullstack-nanodegree-vm)
+3. Clone this repo into the catlog/ directory found in the vagrant directory
+4. Launch the Vagrant VM with `vagrant up`
+5. Log into Vagrant VM with `vagrant ssh`
+6. From the main directory run `sudo pip install -r requirements.txt`
 
 ## Running the program
 
