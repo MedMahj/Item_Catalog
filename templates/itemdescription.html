@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<htmlt lang="en">
+	<head>
+		<title>Catalog App</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+		<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+	</head>
+	<body>
+		<div class="row-top">
+		     
+		    <a href="{{url_for('showCategories')}}"><h1>Catalog App</h1></a>
+		    <div class="login" ><a href="{{url_for('disconnect')}}">Logout </a></div>
+		    
+		</div>
+
+
+		<div class="row-down">
+			<div class = 'flash'>
+		      {% with messages = get_flashed_messages() %}
+                 {% if messages %}
+          
+                     <ul>
+                     {% for message in messages %}
+                         <li> <strong> {{ message }} </strong> </li>
+                     {% endfor %}
+                     </ul>
+                 {% endif %}
+              {% endwith %}
+            </div>
+			<div class="row-down-center">	
+				 <h2>{{item.title}}({{category.name}})</h2>
+				 <figure class="creator">
+				 <img src="{{ creator.picture}}">
+				 <figcaption>{{ creator.name }}</figcaption>
+			     </figure>
+				 <p>Description : {{item.description}}</p>
+				 <a href='{{url_for('editItem', category_id = category.id, item_id=item.id ) }}'>Edit</a> | 
+				 <a href='{{url_for('deleteItem', category_id = category.id, item_id=item.id ) }}'>Delete</a>
+					
+			</div>
+		</div>
+	
+	</body>
+</html>

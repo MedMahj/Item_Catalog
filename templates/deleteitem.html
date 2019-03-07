@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<htmlt lang="en">
+	<head>
+		<title>Catalog App</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+		<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+	</head>
+	<body>
+		<div class="row-top">
+		     
+		    <a href="{{url_for('showCategories')}}"><h1>Catalog App</h1></a>
+		    <div class="login" ><a href="{{url_for('disconnect')}}">Logout </a></div>
+		    
+		</div>
+
+
+		<div class="row-down">
+			<div class="row-down-center">	
+				<h2>Delete Item : {{item.title}}({{category.name}})</h2>
+				<form action="#" method = "post">
+				<div class="form-group">
+					Are you sure you want to delete item ? <br><br>
+					
+					<a href="{{url_for('showCategories')}}"><div class="btn btn-default">Cancel</div></a>
+					<button type="submit" class="btn btn-default" id="submit" type="submit">Delete</button>
+					    
+				</div>
+			</form>
+					
+			</div>
+		</div>
+	
+	</body>
+</html>

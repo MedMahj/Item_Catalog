@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<htmlt lang="en">
+	<head>
+		<title>Catalog App</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+		<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+	</head>
+	<body>
+		<div class="row-top">
+		     
+		    <a href="{{url_for('showCategories')}}"><h1>Catalog App</h1></a>
+		    <div class="login" ><a href="{{url_for('disconnect')}}">Logout </a></div>
+		    
+		</div>
+
+
+		<div class="row-down">
+			<div class="row-down-center">	
+				<h2>New Item</h2>
+				<form action="#" method = "post">
+				<div class="form-group">
+					<label for="title">Title :</label>
+					<input type ="text" maxlength="50" class="form-control" name="title" placeholder="Name of the item" required><br>
+
+					<label for="description">Description :</label>
+					<textarea class="form-control" maxlength="250" rows="3" name="description" placeholder="Description of the item"></textarea><br>
+
+					
+					<label for="Category">Category :</label><br>
+					<select name="category" required>
+					    <option value="">--Please choose a category--</option>   
+						{% for category in categories %}
+					    <option value={{category.id}}>{{category.name}}</option>
+					    {% endfor%}
+					</select>    
+					<br><br>
+					<button type="submit" class="btn btn-default" id="submit" type="submit">Create</button>
+					    
+				</div>
+			    </form>
+					
+			</div>
+		</div>
+	
+	</body>
+</html>

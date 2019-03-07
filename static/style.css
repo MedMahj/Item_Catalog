@@ -1,0 +1,199 @@
+
+
+h1 {
+	font-family: "Helvetica Neue Bold", Roboto, Helvetica, Arial, sans-serif;
+	color: white;
+	position: absolute;
+	top: -5px;
+	
+}
+
+h2 {
+	font-family: "Helvetica Neue Bold", Roboto, Helvetica, Arial, sans-serif;
+	color: #000040;
+
+}
+
+p {
+	margin-top: -60px;
+	margin-right: 80px;
+	margin-left: 0px;
+
+}
+
+ span {
+ 	font-style: italic;
+ 	color: gray;
+ 	
+ }
+
+ body {
+ 	margin: 0px 0px 0px 0px ;
+ 	background-color : silver;
+ }
+
+  strong {
+ 	font-size: 16px;
+ 	color: #7B7573;
+ 	line-height: 24px;
+ }
+
+ .login-buttons {
+ 	width: 400px; height: 500px;
+ 	background-color : white;
+ 	padding :40px;
+	position: absolute;
+	top: 50px;
+	left: 440px;
+	border-radius: 10px;
+
+ }
+
+ .login-buttons span {
+ 	font-size: 34px;
+    font-weight: 320;
+    line-height: 1.3;
+    color: #2e3d49;
+    text-align: center;
+ }
+#signinButton {
+	margin-left: 90px;
+}
+
+.fb-button {
+	margin-left: 90px;
+}
+
+.login-session {
+	position: absolute;
+	top: 240px;
+	left: 540px;
+
+}
+
+.login-session span {
+ 	font-size: 14px;
+    font-weight: 200;
+    line-height: 1.3;
+    color: #2e3d49;
+    text-align: center;
+
+}
+
+.login a {
+	font-family: "Helvetica Neue", Roboto, Helvetica, Arial, sans-serif;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+
+}
+
+.login {
+	background-color : #EE0000;
+	padding : 5px 5px 5px 5px;
+	position: absolute;
+	top: 20px;
+	right: 200px;
+	border-radius : 10%;
+	
+	
+}
+
+.row-top {
+	height: 60px; 
+	background-color : #000040;
+	padding-left : 200px;
+	padding-right: 200px;
+
+
+}
+
+.row-down {
+
+
+	padding :20px 260px 50px 220px;
+
+}
+
+.row-down-center {
+	height: 100%; width: 100%;
+	background-color : white;
+	padding :20px 20px 20px 20px;
+    border-radius: 10px;
+	
+
+}
+
+.row-down-center-col {
+	
+	display: table-cell;
+	padding-left : 20px;
+	padding-right : 50px;
+
+}
+
+.row-down-center-col a {
+	font-family: "Helvetica Neue", Roboto, Helvetica, Arial, sans-serif;
+	color: red;
+	text-decoration: none;
+}
+
+
+.vl {
+  border-left: 1px solid silver;
+  height: 100%;
+  display: table-cell;
+  
+  
+}
+
+li {
+	padding-bottom: 10px;
+}
+
+
+.creator {
+	width: 78px;
+	position: relative;
+	bottom: 60px;
+	left: 680px;
+}
+
+.creator img {
+	width: 78px;
+	border-radius: 50%;
+
+}
+.creator figcaption {
+	font-size: 12px;
+	color: gray;
+	text-align: center;
+	font-weight: lighter;
+	margin-top: 5px;
+}
+
+.json {
+	position: relative;
+	left: 410px;
+
+	
+}
+
+.flash {
+	background-color: #F4C6C6;
+	width:100%;
+	text-decoration: none;
+	border-radius: 10px;
+
+}
+
+.flash li {
+	list-style-type: none;
+	text-align: center;
+
+}
+
+
+
+
+
