@@ -1,4 +1,4 @@
-# Item Catalog Project - Udacity FSND Nanodegree
+# Item Catalog Project - Udacity FSWD Nanodegree
 
 ## Description 
 
